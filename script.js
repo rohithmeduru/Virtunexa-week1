@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation Toggle
+    
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.toggle('active');
     });
     
-    // Close mobile menu when clicking on a link
+  
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Smooth scrolling for navigation links
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Navbar background change on scroll
+   
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
@@ -43,9 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.remove('scrolled');
         }
     });
-    
-    // Back to top button
-    const backToTopButton = document.querySelector('.back-to-top');
+ 
+        const backToTopButton = document.querySelector('.back-to-top');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
             backToTopButton.classList.add('active');
@@ -54,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Form submission
-    const contactForm = document.querySelector('.contact-form');
+
+        const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
